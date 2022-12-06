@@ -6,9 +6,16 @@ const port = 3001
 const product_test = require('./test');
 
 app.use(express.json())
-app.use(function (req, res, next) {
-  next();
+// app.use(function (req, res, next) {
+//   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
+//   next();
+// });
+app.get('/', function(req, res) {
+  res.send('Hello World!')
 });
+
 
 app.get('/products', (req, res) => {
   product_test.getProduct()
@@ -42,6 +49,21 @@ app.get('/get_orders', (req, res) => {
     res.status(500).send(error);
   })
 })
+// get emplyoees
+app.get('/get_employees', (req, res) => {
+  product_test.getEmployees()
+  .then(response => {
+    res.status(200).send(response);
+  })
+  .catch(error => {
+    console.log(error);
+    res.status
+    (500).
+    send(error
+    );
+  })
+})
+
 
 app.post('/translate', (req, res) => {
   product_test.translateText(req, res)
