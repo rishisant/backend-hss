@@ -1,5 +1,5 @@
 {
-  "name": "node-postgres1",
+  "name": "postgres1",
   "version": "1.0.0",
   "description": "practice",
   "main": "index.js",
@@ -18,5 +18,13 @@
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "psql": "^0.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishisant/backend-hss.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rishisant/backend-hss/issues"
+  },
+  "homepage": "https://github.com/rishisant/backend-hss#readme"
 }
