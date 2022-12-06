@@ -1,14 +1,16 @@
 {
-  "name": "postgres1",
+  "name": "node-postgres1",
   "version": "1.0.0",
   "description": "practice",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/translate": "^7.0.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-graphql": "^0.12.0",
@@ -19,15 +21,7 @@
     "pg": "^8.8.0",
     "psql": "^0.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rishisant/backend-hss.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rishisant/backend-hss/issues"
-  },
   "engines": {
-    "node": "16.16.0"
-  },
-  "homepage": "https://github.com/rishisant/backend-hss#readme"
+    "node": "16.6.0"
+  }
 }
